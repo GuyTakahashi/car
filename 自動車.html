@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var weight_car = parseInt(prompt("車両総重量(kg)は？")), weight_lug = parseInt(prompt("最大積載量(kg)は？")), pax = parseInt(prompt("乗車定員(人)は？"));
+    if (weight_car >= 11000 || weight_lug >= 6500 || pax >= 30) {
+      document.write("大型自動車です")
+    } else if (7500 <= weight_car < 11000 || 4500 <= weight_lug < 6500 || 11 <= pax < 30) {
+      document.write("中型自動車です")
+    } else if (3500 <= weight_car < 7500 || 2000 <= weight_lug < 4500) {
+      document.write("準中型自動車です")
+    } else if (weight_car < 3500 && weight_lug < 2000 && pax <= 10) {
+      document.write("普通自動車です")
+    } else {
+      document.write("、？")
+    }
+  </script>
+</body>
+</html>
